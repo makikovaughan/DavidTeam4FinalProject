@@ -1,0 +1,15 @@
+* {
+    margin: 0;                   
+    padding: 0;
+    box-sizing: border-box;
+ }
+.carousel-item img {
+    height: 400px;
+}
+.carousel-caption {
+    font-size: 11px;
+    background-color: dimgray;
+    color:white;
+    padding: 5px;
+    height: auto;
+}
