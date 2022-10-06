@@ -8,13 +8,31 @@
     height: 90%;
   }
 .carousel-item img {
-    height: 400px;
+    height: 380px;
 }
 .carousel-caption {
     font-size: 11px;
     background-color: dimgray;
     color:white;
     padding: 5px;
-    height: auto;
+}
+.carousel-item .homebanner {
+    height: 560px;
+}
+/*.homebanner img{
+    height: 560px;
 }
 
+.container-fluid {
+    background-image: url("./photo/homeBannerCandle.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+*/
+/*.shopbutton {   
+    position: absolute;
+    bottom: 150px;
+    left: 580px;
+    z-index: 1;
+}*/
