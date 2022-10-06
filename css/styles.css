@@ -18,3 +18,34 @@
     height: auto;
 }
 
+/* Review section */
+.reviews{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+    
+.carousel-item > img{
+    object-fit: cover;
+    aspect-ratio: 1 / .7; 
+   
+    
+}
+
+
+.carousel-caption{
+    
+    border: .3em solid black;
+    background-color: white;
+    color:black;
+    margin:0 auto;
+    max-width:fit-content;
+}
+
+
+
+
+
+
+
