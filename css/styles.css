@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
  }
+ .description-image {
+    width: 90%;
+    height: 90%;
+  }
 .carousel-item img {
     height: 400px;
 }
@@ -13,3 +17,4 @@
     padding: 5px;
     height: auto;
 }
+
