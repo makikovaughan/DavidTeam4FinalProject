@@ -13,26 +13,38 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
   </head>
+
   <body>
-
     <main>
-
-
-
-   
-
-
-
-
-
-
+     <!--jumbotron & shop now button section-->
+      <div class ="container-fluid">
+        <div class ="row">         
+          <div class ="col">          
+              <div class="jumbotron-fluid bg-warning p-3">
+                <h4 class="text-center">Use code "CANDLESLOVER" to get 10% off on every order!</h4>
+              </div>
+          </div>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./photo/homeBannerCandle.jpg" class="homebanner d-block w-100" alt="candlebanner">
+              <div class="carousel-caption d-none d-md-block bg-transparent p-5">
+                <button type="button" class="btn btn-warning p-3">
+                  <a href="#" target="_blank" class="text-black">SHOP NOW!</a>            
+                </button>   
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>  
 
 
 
       <!--Review section-->
-
+  
       <section class="reviews">
         <h2>Our Reviews:</h2>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -82,7 +94,6 @@
           </button>
         </div>
       </section><!--end of review section-->
-
     </main>
 
     <!--footer-->
@@ -141,5 +152,5 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"
   ></script>
-
+  </body>
 </html>
