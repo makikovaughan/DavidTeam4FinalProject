@@ -1,20 +1,21 @@
 * {
-    margin: 0;                   
-    padding: 0;
-    box-sizing: border-box;
- }
- .description-image {
-    width: 90%;
-    height: 90%;
-  }
-.carousel-item img {
-    height: 400px;
-}
-.carousel-caption {
-    font-size: 11px;
-    background-color: dimgray;
-    color:white;
-    padding: 5px;
-    height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Picture of desciption setup */
+.description-image {
+  width: 90%;
+  height: 90%;
+}
+.carousel-item img {
+  height: 400px;
+}
+.carousel-caption {
+  font-size: 11px;
+  background-color: dimgray;
+  color: white;
+  padding: 5px;
+  height: auto;
+}
