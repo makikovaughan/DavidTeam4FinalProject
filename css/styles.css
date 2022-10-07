@@ -3,36 +3,45 @@
     padding: 0;
     box-sizing: border-box;
  }
- .description-image {
-    width: 90%;
-    height: 90%;
-  }
+
+/* Picture of desciption setup */
+.description-image {
+  width: 90%;
+  height: 90%;
+}
+
+ /*about us page carousel*/
 .carousel-item img {
-    height: 380px;
+  height: 400px;
 }
-.carousel-caption {
-    font-size: 11px;
-    background-color: dimgray;
-    color:white;
-    padding: 5px;
+.carousel-caption{
+  font-size: 11px;
+  background-color: dimgray;
+  color: white;
+  padding: 5px;
+  height: auto;
+  border: 0;
 }
+/*home page carousel*/
 .carousel-item .homebanner {
     height: 560px;
 }
-/*.homebanner img{
-    height: 560px;
+
+/* Review section */
+.reviews{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+}
+.carousel-item > img{
+    object-fit: cover;
+    aspect-ratio: 1 / .7; 
 }
 
-.container-fluid {
-    background-image: url("./photo/homeBannerCandle.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-*/
-/*.shopbutton {   
-    position: absolute;
-    bottom: 150px;
-    left: 580px;
-    z-index: 1;
-}*/
+.carousel-caption{
+/*   border: .3em solid black;
+    background-color: white;
+    color:black; */
+    margin:0 auto;
+    max-width:fit-content;
+} 
