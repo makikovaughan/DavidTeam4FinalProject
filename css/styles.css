@@ -46,10 +46,26 @@
     max-width:fit-content;
 }
 
+.about{
+    width: 100%;
+    margin:0 auto;
+}
 
+/* item form page  */
+form{
+    width:80%;
+    margin: 0 auto;
+}
 
+body{
+    padding-bottom: 60px;
+}
 
-
-
+footer{
+    position: absolute;
+          width: 100%;
+          min-height: 60px;
+          left: 0;
+}
 
 
