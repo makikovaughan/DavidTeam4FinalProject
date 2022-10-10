@@ -9,6 +9,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .description-image {
@@ -16,9 +17,54 @@ html {
     height: 90%;
 }
 
+
 .carousel-item img {
-    height: 400px;
+  height: 400px;
 }
+.carousel-caption{
+  font-size: 11px;
+  background-color: dimgray;
+  color: white;
+  padding: 5px;
+  height: auto;
+  border: 0;
+}
+/*home page carousel*/
+.carousel-item .homebanner {
+    height: 560px;
+}
+
+/* Review section */
+.reviews{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+}
+.carousel-item > img{
+    object-fit: cover;
+    aspect-ratio: 1 / .7; 
+}
+
+.carousel-caption{
+/*   border: .3em solid black;
+    background-color: white;
+    color:black; */
+    margin:0 auto;
+    max-width:fit-content;
+
+}
+
+.about{
+    width: 100%;
+    margin:0 auto;
+}
+
+/* item form page  */
+form{
+    width:80%;
+    margin: 0 auto;
+}
+
 
 .carousel-caption {
     font-size: 11px;
@@ -62,3 +108,7 @@ nav {
     padding-right: 1%;
 
 }
+
+
+
+
