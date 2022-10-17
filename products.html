@@ -1,498 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Candles</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Candles</title>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <!-- CSS -->
-  <link href="./css/styles.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
 
-</head>
+    <!-- CSS -->
+    <link href="./css/products_style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-  <main>
-
-    <!-- Navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
-      <img src=" images\Untitled design (2).png" class="logo">
-      <a class="navbar-brand" href="#"> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- To switch the nav bar from left to right, where there's mr-auto change to ml-auto and there there's me-auto switch to ms-auto-->
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style=" float:left; text-align: left">
-        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Form</a>
-          </li>
-        </ul>
-        <!-- Add shopping card icon
+  <body>
+    <main>
+      <!-- Navigation bar-->
+      <!-- Navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <img src=" images\Untitled design (2).png" class="logo" />
+        <a class="navbar-brand" href="#"> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- To switch the nav bar from left to right, where there's mr-auto change to ml-auto and there there's me-auto switch to ms-auto-->
+        <div
+          class="collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+          style="float: left; text-align: left"
+        >
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Form</a>
+            </li>
+          </ul>
+          <!-- Add shopping card icon
                     <button style="font-size:16px; color: black;">Cart<i class="fa fa-shopping-cart"></i></button> -->
-        <i class="fa fa-shopping-cart" style="font-size:32px; padding-right: 1%;"></i>
+          <i
+            class="fa fa-shopping-cart"
+            style="font-size: 32px; padding-right: 1%"
+          ></i>
+        </div>
+      </nav>
+      <!--Container for list of products-->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-4 mb-5">
+            <!--Product Picture-->
+            <div class="card" style="width: 18rem">
+              <img
+                class="image-candles"
+                src="./images/jessica-delp-smNzhFQRktg-unsplash.jpg"
+                class="card-img-top"
+                alt="Litted white candle"
+              />
+
+              <!--Product Name and description-->
+              <div class="card-body">
+                <h5 class="card-title">Vanilla Cream</h5>
+                <p class="card-text">Relaxing with rich vanilla.</p>
+              </div>
+              <!--Price-->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$4.00</li>
+                <li class="list-group-item">
+                  <!--Order QTY dropdown and add to bag button-->
+                  <div class="order-container">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        QTY
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">3</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">4</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">5</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">6</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">7</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">8</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">9</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">10</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary">
+                      Add to Bag
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <!--Card-->
+            <div class="card" style="width: 18rem">
+              <!--Product Picture-->
+              <img
+                class="image-candles"
+                src="./images/stories-mFTOFzUKdl0-unsplash.jpg"
+                class="card-img-top"
+                alt="Cinamon Candle"
+              />
+
+              <!--Product Name and description-->
+              <div class="card-body">
+                <h5 class="card-title">Stimulating Cinamon</h5>
+                <p class="card-text">Hot and Spicey</p>
+              </div>
+              <!--Price-->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$4.00</li>
+                <li class="list-group-item">
+                  <!--Order QTY dropdown and add to bag button-->
+                  <div class="order-container">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        QTY
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">3</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">4</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">5</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">6</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">7</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">8</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">9</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">10</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Add to Bag-->
+                    <button type="button" class="btn btn-outline-secondary">
+                      Add to Bag
+                    </button>
+                  </div>
+                  <!--End of Order QTY dropdown and add to bag button-->
+                </li>
+              </ul>
+            </div>
+            <!--End of Card-->
+          </div>
+          <!--End of Column-->
+          <div class="col-lg-4 mb-5">
+            <!--Card-->
+            <div class="card" style="width: 18rem">
+              <!--Product Picture-->
+              <img
+                class="image-candles"
+                src="./images/no-revisions-QftN8ELlGwo-unsplash.jpg"
+                class="card-img-top"
+                alt="Levitate Candle"
+              />
+
+              <!--Product Name and description-->
+              <div class="card-body">
+                <h5 class="card-title">Levitate</h5>
+                <p class="card-text">Bergamot + Thyme + White Tea</p>
+              </div>
+              <!--Price-->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$6.00</li>
+                <li class="list-group-item">
+                  <!--Order QTY dropdown and add to bag button-->
+                  <div class="order-container">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        QTY
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">3</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">4</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">5</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">6</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">7</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">8</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">9</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">10</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Add to Bag-->
+                    <button type="button" class="btn btn-outline-secondary">
+                      Add to Bag
+                    </button>
+                  </div>
+                  <!--End of Order QTY dropdown and add to bag button-->
+                </li>
+              </ul>
+            </div>
+            <!--End of Card-->
+          </div>
+          <!--End of Column-->
+        </div>
+        <!--End of Row 1-->
+        <!--The 2nd row-->
+        <div class="row mb-5">
+          <!--First Column-->
+          <div class="col-lg-4 mb-5">
+            <!--Card-->
+            <div class="card" style="width: 18rem">
+              <!--Product Picture-->
+              <img
+                class="image-candles"
+                src="./images/fiona-murray-FMoYsO7CGgA-unsplash.jpg"
+                class="card-img-top"
+                alt="Citrus candle"
+              />
+
+              <!--Product Name and description-->
+              <div class="card-body">
+                <h5 class="card-title">Front Porch</h5>
+                <p class="card-text">Citrus & Eucalyptus</p>
+              </div>
+              <!--Price-->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$12.00</li>
+                <li class="list-group-item">
+                  <!--Order QTY dropdown and add to bag button-->
+                  <div class="order-container">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        QTY
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">3</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">4</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">5</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">6</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">7</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">8</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">9</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">10</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Add to Bag-->
+                    <button type="button" class="btn btn-outline-secondary">
+                      Add to Bag
+                    </button>
+                  </div>
+                  <!--End of Order QTY dropdown and add to bag button-->
+                </li>
+              </ul>
+            </div>
+            <!--End of Card-->
+          </div>
+          <!--End of the first column-->
+          <!--2nd Column-->
+          <div class="col-lg-4 mb-5">
+            <!--Card-->
+            <div class="card" style="width: 18rem">
+              <!--Product Picture-->
+              <img
+                class="image-candles"
+                src="./images/andrea-davis-4H5IH4YNmmI-unsplash.jpg"
+                class="card-img-top"
+                alt="green candle"
+              />
+
+              <!--Product Name and description-->
+              <div class="card-body">
+                <h5 class="card-title">Sand + Fog</h5>
+                <p class="card-text">Vanilla Sandalwood</p>
+              </div>
+              <!--Price-->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$12.00</li>
+                <li class="list-group-item">
+                  <!--Order QTY dropdown and add to bag button-->
+                  <div class="order-container">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        QTY
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">3</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">4</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">5</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">6</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">7</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">8</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">9</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">10</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Add to Bag-->
+                    <button type="button" class="btn btn-outline-secondary">
+                      Add to Bag
+                    </button>
+                  </div>
+                  <!--End of Order QTY dropdown and add to bag button-->
+                </li>
+              </ul>
+            </div>
+            <!--End of Card-->
+          </div>
+          <!--End of 2nd column-->
+          <!--3rd Column-->
+          <div class="col-lg-4 mb-5">
+            <!--Card-->
+            <div class="card" style="width: 18rem">
+              <!--Product Picture-->
+              <img
+                class="image-candles"
+                src="./images/martipaan-QagIzHwsy4A-unsplash.jpg"
+                class="card-img-top"
+                alt="Smokey wood white candle"
+              />
+
+              <!--Product Name and description-->
+              <div class="card-body">
+                <h5 class="card-title">Smokey Wood</h5>
+                <p class="card-text">Black Leather & Smokey Sandalwood</p>
+              </div>
+              <!--Price-->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">$12.00</li>
+                <li class="list-group-item">
+                  <!--Order QTY dropdown and add to bag button-->
+                  <div class="order-container">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        QTY
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">3</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">4</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">5</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">6</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">7</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">8</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">9</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">10</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Add to Bag-->
+                    <button type="button" class="btn btn-outline-secondary">
+                      Add to Bag
+                    </button>
+                  </div>
+                  <!--End of Order QTY dropdown and add to bag button-->
+                </li>
+              </ul>
+            </div>
+            <!--End of Card-->
+          </div>
+          <!--End of 3rd column-->
+        </div>
+        <!--End of the 2nd row-->
       </div>
-    </nav>
-
-    <!--Container for list of products-->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-4 mb-5">
-          <!--Product Picture-->
-          <div class="card" style="width: 18rem">
-            <img class="image-candles" src="./images/jessica-delp-smNzhFQRktg-unsplash.jpg" class="card-img-top"
-              alt="Litted white candle" />
-
-            <!--Product Name and description-->
-            <div class="card-body">
-              <h5 class="card-title">Vanilla Cream</h5>
-              <p class="card-text">Relaxing with rich vanilla.</p>
-            </div>
-            <!--Price-->
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$4.00</li>
-              <li class="list-group-item">
-                <!--Order QTY dropdown and add to bag button-->
-                <div class="order-container">
-                  <!-- Example single danger button -->
-                  <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      QTY
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">1</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">3</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">4</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">5</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">6</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">7</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">8</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">9</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">10</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <button type="button" class="btn btn-outline-secondary">
-                    Add to Bag
-                  </button>
-                </div>
-              </li>
-            </ul>
+      <!--End of container-->
+    </main>
+    <!--footer-->
+    <footer>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">Contact Us:</h5>
+          <div class="card-text">
+            <p class="text-center">
+              Email us at:
+              <a
+                href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                target="_blank"
+                >candleshopowner23@gmail.com</a
+              >
+            </p>
+            <p>&copy; copyright 2022</p>
+            <p class="icons position-absolute top-0 end-0">
+              <!--Facebook icon-->
+              <a href="http://facebook.com" target="_blank"
+                ><img
+                  alt="facebook ico"
+                  src="https://s3.amazonaws.com/flashissue/MsIJsIsDT9WLAxxH4aIK_OgdHV3vxSR2737LGd8cq_facebook.png"
+                />
+              </a>
+              <!--Google+ icon-->
+              <a href="http://plus.google.com" target="_blank"
+                ><img
+                  alt="google icon"
+                  src="https://s3.amazonaws.com/flashissue/gHd2XoyiQbKBqljm7bzg_63j3xtd7SX28TTMeOSfZ_google.png"
+                />
+              </a>
+              <!--Twitter icon-->
+              <a href="http://twitter.com" target="_blank"
+                ><img
+                  alt="twitter icon"
+                  src="https://s3.amazonaws.com/flashissue/ueBIjxRoTBuYR6XWW1iO_v3qVW5nRUq5VZF9RQXi2_twitter.png"
+                />
+              </a>
+              <!--Linkedin icon-->
+              <a href="http://pinterest.com" target="_blank"
+                ><img
+                  alt="pintrest icon"
+                  src="https://s3.amazonaws.com/flashissue/b8Xt2lN8TCKhilmoHXGW_TCjqF6FgS86WoWzUOQCh_pinterest.png"
+                />
+              </a>
+            </p>
           </div>
-        </div>
-        <div class="col-lg-4 mb-5">
-          <!--Card-->
-          <div class="card" style="width: 18rem">
-            <!--Product Picture-->
-            <img class="image-candles" src="./images/stories-mFTOFzUKdl0-unsplash.jpg" class="card-img-top"
-              alt="Cinamon Candle" />
-
-            <!--Product Name and description-->
-            <div class="card-body">
-              <h5 class="card-title">Stimulating Cinamon</h5>
-              <p class="card-text">Hot and Spicey</p>
-            </div>
-            <!--Price-->
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$4.00</li>
-              <li class="list-group-item">
-                <!--Order QTY dropdown and add to bag button-->
-                <div class="order-container">
-                  <!-- Example single danger button -->
-                  <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      QTY
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">1</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">3</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">4</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">5</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">6</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">7</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">8</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">9</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">10</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!--Add to Bag-->
-                  <button type="button" class="btn btn-outline-secondary">
-                    Add to Bag
-                  </button>
-                </div>
-                <!--End of Order QTY dropdown and add to bag button-->
-              </li>
-            </ul>
-          </div>
-          <!--End of Card-->
-        </div>
-        <!--End of Column-->
-        <div class="col-lg-4 mb-5">
-          <!--Card-->
-          <div class="card" style="width: 18rem">
-            <!--Product Picture-->
-            <img class="image-candles" src="./images/no-revisions-QftN8ELlGwo-unsplash.jpg" class="card-img-top"
-              alt="Levitate Candle" />
-
-            <!--Product Name and description-->
-            <div class="card-body">
-              <h5 class="card-title">Levitate</h5>
-              <p class="card-text">Bergamot + Thyme + White Tea</p>
-            </div>
-            <!--Price-->
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$6.00</li>
-              <li class="list-group-item">
-                <!--Order QTY dropdown and add to bag button-->
-                <div class="order-container">
-                  <!-- Example single danger button -->
-                  <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      QTY
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">1</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">3</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">4</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">5</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">6</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">7</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">8</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">9</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">10</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!--Add to Bag-->
-                  <button type="button" class="btn btn-outline-secondary">
-                    Add to Bag
-                  </button>
-                </div>
-                <!--End of Order QTY dropdown and add to bag button-->
-              </li>
-            </ul>
-          </div>
-          <!--End of Card-->
-        </div>
-        <!--End of Column-->
-      </div>
-      <!--End of Row 1-->
-      <!--The 2nd row-->
-      <div class="row mb-5">
-        <!--First Column-->
-        <div class="col-lg-4 mb-5">
-          <!--Card-->
-          <div class="card" style="width: 18rem">
-            <!--Product Picture-->
-            <img class="image-candles" src="./images/fiona-murray-FMoYsO7CGgA-unsplash.jpg" class="card-img-top"
-              alt="Citrus candle" />
-
-            <!--Product Name and description-->
-            <div class="card-body">
-              <h5 class="card-title">Front Porch</h5>
-              <p class="card-text">Citrus & Eucalyptus</p>
-            </div>
-            <!--Price-->
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$12.00</li>
-              <li class="list-group-item">
-                <!--Order QTY dropdown and add to bag button-->
-                <div class="order-container">
-                  <!-- Example single danger button -->
-                  <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      QTY
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">1</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">3</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">4</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">5</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">6</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">7</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">8</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">9</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">10</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!--Add to Bag-->
-                  <button type="button" class="btn btn-outline-secondary">
-                    Add to Bag
-                  </button>
-                </div>
-                <!--End of Order QTY dropdown and add to bag button-->
-              </li>
-            </ul>
-          </div>
-          <!--End of Card-->
-        </div>
-        <!--End of the first column-->
-        <!--2nd Column-->
-        <div class="col-lg-4 mb-5">
-          <!--Card-->
-          <div class="card" style="width: 18rem">
-            <!--Product Picture-->
-            <img class="image-candles" src="./images/andrea-davis-4H5IH4YNmmI-unsplash.jpg" class="card-img-top"
-              alt="green candle" />
-
-            <!--Product Name and description-->
-            <div class="card-body">
-              <h5 class="card-title">Sand + Fog</h5>
-              <p class="card-text">Vanilla Sandalwood</p>
-            </div>
-            <!--Price-->
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$12.00</li>
-              <li class="list-group-item">
-                <!--Order QTY dropdown and add to bag button-->
-                <div class="order-container">
-                  <!-- Example single danger button -->
-                  <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      QTY
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">1</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">3</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">4</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">5</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">6</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">7</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">8</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">9</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">10</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!--Add to Bag-->
-                  <button type="button" class="btn btn-outline-secondary">
-                    Add to Bag
-                  </button>
-                </div>
-                <!--End of Order QTY dropdown and add to bag button-->
-              </li>
-            </ul>
-          </div>
-          <!--End of Card-->
-        </div>
-        <!--End of 2nd column-->
-        <!--3rd Column-->
-        <div class="col-lg-4 mb-5">
-          <!--Card-->
-          <div class="card" style="width: 18rem">
-            <!--Product Picture-->
-            <img class="image-candles" src="./images/martipaan-QagIzHwsy4A-unsplash.jpg" class="card-img-top"
-              alt="Smokey wood white candle" />
-
-            <!--Product Name and description-->
-            <div class="card-body">
-              <h5 class="card-title">Smokey Wood</h5>
-              <p class="card-text">Black Leather & Smokey Sandalwood</p>
-            </div>
-            <!--Price-->
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$12.00</li>
-              <li class="list-group-item">
-                <!--Order QTY dropdown and add to bag button-->
-                <div class="order-container">
-                  <!-- Example single danger button -->
-                  <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      QTY
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">1</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">3</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">4</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">5</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">6</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">7</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">8</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">9</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">10</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!--Add to Bag-->
-                  <button type="button" class="btn btn-outline-secondary">
-                    Add to Bag
-                  </button>
-                </div>
-                <!--End of Order QTY dropdown and add to bag button-->
-              </li>
-            </ul>
-          </div>
-          <!--End of Card-->
-        </div>
-        <!--End of 3rd column-->
-      </div>
-      <!--End of the 2nd row-->
-    </div>
-    <!--End of container-->
-  </main>
-  <!--footer-->
-  <footer>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title text-center">Contact Us:</h5>
-        <div class="card-text">
-          <p class="text-center">
-            Email us at:
-            <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-              target="_blank">candleshopowner23@gmail.com</a>
-          </p>
-          <p>&copy; copyright 2022</p>
-          <p class="icons position-absolute top-0 end-0">
-            <!--Facebook icon-->
-            <a href="http://facebook.com" target="_blank"><img alt="facebook ico"
-                src="https://s3.amazonaws.com/flashissue/MsIJsIsDT9WLAxxH4aIK_OgdHV3vxSR2737LGd8cq_facebook.png" />
-            </a>
-            <!--Google+ icon-->
-            <a href="http://plus.google.com" target="_blank"><img alt="google icon"
-                src="https://s3.amazonaws.com/flashissue/gHd2XoyiQbKBqljm7bzg_63j3xtd7SX28TTMeOSfZ_google.png" />
-            </a>
-            <!--Twitter icon-->
-            <a href="http://twitter.com" target="_blank"><img alt="twitter icon"
-                src="https://s3.amazonaws.com/flashissue/ueBIjxRoTBuYR6XWW1iO_v3qVW5nRUq5VZF9RQXi2_twitter.png" />
-            </a>
-            <!--Linkedin icon-->
-            <a href="http://pinterest.com" target="_blank"><img alt="pintrest icon"
-                src="https://s3.amazonaws.com/flashissue/b8Xt2lN8TCKhilmoHXGW_TCjqF6FgS86WoWzUOQCh_pinterest.png" />
-            </a>
-          </p>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
