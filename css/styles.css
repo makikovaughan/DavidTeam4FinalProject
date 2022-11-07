@@ -20,6 +20,49 @@ nav {
   padding: 0;
   box-sizing: border-box;
 }
+/*about us image heading*/
+.Candleback {
+  height: 0px;
+  background: rgb(90, 84, 84);
+}
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0;
+}
+.container .btn:hover {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*discruotuion image*/
 
 .description-image {
   width: 90%;
