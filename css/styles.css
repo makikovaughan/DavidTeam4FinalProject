@@ -19,6 +19,7 @@ nav {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
 }
 
 /*about us image heading*/
@@ -98,6 +99,10 @@ img {
   padding: 3em;
 }
 
+.reviews h2{
+  text-align: center;
+}
+
 .carousel-item>img {
   object-fit: cover;
   aspect-ratio: 1 / 0.7;
@@ -158,3 +163,28 @@ form {
 .icons a {
   display: inline-block;
 }
+
+nav{
+  background-color: #bbd0ff;
+}
+
+.footer--bg{
+  background-color: #bbd0ff;
+}
+
+.jumbotron-fluid{
+  background-color: #92a3af;
+  color:white;
+}
+
+.btn--color{
+  background-color: #9eb3c2;
+  color:white;
+}
+
+.btn--color:hover{
+  background-color: #9eb3c2;
+}
+
+
+
