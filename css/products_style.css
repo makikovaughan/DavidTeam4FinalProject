@@ -6,6 +6,11 @@
   z-index: 1;
 }
 
+*{
+  font-family:'Times New Roman', Times, serif;
+
+}
+
 .description-image {
   width: 90%;
   height: 90%;
@@ -88,4 +93,12 @@ form {
   content: "";
   clear: both;
   display: table;
+}
+
+nav{
+  background-color: #bbd0ff;
+}
+
+.footer--bg{
+  background-color: #bbd0ff;
 }
