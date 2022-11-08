@@ -20,11 +20,13 @@ nav {
   padding: 0;
   box-sizing: border-box;
 }
+
 /*about us image heading*/
 .Candleback {
   height: 0px;
   background: rgb(90, 84, 84);
 }
+
 .container {
   position: relative;
 }
@@ -37,11 +39,12 @@ nav {
   font-size: 18px;
 }
 
-img { 
+img {
   width: 100%;
   height: auto;
-  opacity: 0;
+
 }
+
 .container .btn:hover {
   background-color: black;
 }
@@ -62,6 +65,7 @@ img {
   clear: both;
   display: table;
 }
+
 /*discruotuion image*/
 
 .description-image {
@@ -72,6 +76,7 @@ img {
 .carousel-item img {
   height: 400px;
 }
+
 .carousel-caption {
   font-size: 11px;
   background-color: dimgray;
@@ -80,6 +85,7 @@ img {
   height: auto;
   border: 0;
 }
+
 /*home page carousel*/
 .carousel-item .homebanner {
   height: 560px;
@@ -91,7 +97,8 @@ img {
   margin: 0 auto;
   padding: 3em;
 }
-.carousel-item > img {
+
+.carousel-item>img {
   object-fit: cover;
   aspect-ratio: 1 / 0.7;
 }
@@ -146,4 +153,8 @@ form {
   content: "";
   clear: both;
   display: table;
+}
+
+.icons a {
+  display: inline-block;
 }
