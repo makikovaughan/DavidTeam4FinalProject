@@ -6,10 +6,10 @@
   z-index: 1;
 }
 
-*{
+/* *{
   font-family:'Times New Roman', Times, serif;
 
-}
+}  */
 
 .description-image {
   width: 90%;
@@ -101,4 +101,37 @@ nav{
 
 .footer--bg{
   background-color: #bbd0ff;
+}
+
+
+/* products page style- dynamic section*/
+.flex-container{
+  display:flex;
+  flex-direction:column;
+  
+}
+
+.flex-products{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.card-img-top{
+  height:60%;
+  object-fit: cover;
+  aspect-ratio: 1/1.2 ;
+  
+}
+
+.btn--hover:hover{
+  background-color: gray;
+  color:white;
+}
+
+.card__btn{
+  display:flex;
+  gap: 1em;
+  margin:0 auto;
+  justify-content:center;
+  align-items:center;
 }
