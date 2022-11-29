@@ -19,12 +19,15 @@ nav {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family:'Times New Roman', Times, serif; */
 }
+
 /*about us image heading*/
 .Candleback {
   height: 0px;
   background: rgb(90, 84, 84);
 }
+
 .container {
   position: relative;
 }
@@ -37,11 +40,12 @@ nav {
   font-size: 18px;
 }
 
-img { 
+img {
   width: 100%;
   height: auto;
-  opacity: 0;
+
 }
+
 .container .btn:hover {
   background-color: black;
 }
@@ -62,6 +66,7 @@ img {
   clear: both;
   display: table;
 }
+
 /*discruotuion image*/
 
 .description-image {
@@ -72,6 +77,7 @@ img {
 .carousel-item img {
   height: 400px;
 }
+
 .carousel-caption {
   font-size: 11px;
   background-color: dimgray;
@@ -80,6 +86,7 @@ img {
   height: auto;
   border: 0;
 }
+
 /*home page carousel*/
 .carousel-item .homebanner {
   height: 560px;
@@ -91,7 +98,12 @@ img {
   margin: 0 auto;
   padding: 3em;
 }
-.carousel-item > img {
+
+.reviews h2{
+  text-align: center;
+}
+
+.carousel-item>img {
   object-fit: cover;
   aspect-ratio: 1 / 0.7;
 }
@@ -147,3 +159,32 @@ form {
   clear: both;
   display: table;
 }
+
+.icons a {
+  display: inline-block;
+}
+
+nav{
+  background-color: #bbd0ff;
+}
+
+.footer--bg{
+  background-color: #bbd0ff;
+}
+
+.jumbotron-fluid{
+  background-color: #92a3af;
+  color:white;
+}
+
+.btn--color{
+  background-color: #9eb3c2;
+  color:white;
+}
+
+.btn--color:hover{
+  background-color: #9eb3c2;
+}
+
+
+
